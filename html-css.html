@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<INPUT type="button" class = "buttonstyle" value="Window" OnClick="alert(window.status);">
+<INPUT type="button" class = "buttonstyle"value="Navigator" OnClick="alert(navigator.appVersion);">
+<INPUT type="button" class = "buttonstyle" value="Location" OnClick="alert(location.href	);">
+<INPUT type="button" class = "buttonstyle" value="Screen" OnClick="alert('Размер экрана: ' + screen.width + ' x ' + screen.height);">
+
+
+<style>
+  .image {
+    position: absolute;
+    margin: 100px 0px 0px  300px;
+    width: 30%;
+    height: 30%;
+  }
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>История создания ядерной бомбы</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+  <script type="text/javascript">alert(document.lastModified)
+function changeStyle() {
+      var p = document.getElementById("second");
+      p.style.paddingRight = "3cm";
+      p.style.textIndent = "2.5cm";
+    }
+
+    function restoreStyle() {
+      var p = document.getElementById("second");
+      p.style.paddingRight = "1.5cm";
+      p.style.textIndent = "0.7cm";
+    }
+function hideMiddleImage() {
+  var middleImage = document.getElementsByName("image2")[0];
+  middleImage.style.display = "none";
+}
+
+function showMiddleImage() {
+  var middleImage = document.getElementsByName("image2")[0];
+  middleImage.style.display = "block";
+}
+
+function swapLayers() {
+  var topImage = document.getElementsByName("image1")[0];
+  var bottomImage = document.getElementsByName("image3")[0];
+  
+  var tempZIndex = topImage.style.zIndex;
+  topImage.style.zIndex = bottomImage.style.zIndex;
+  bottomImage.style.zIndex = tempZIndex;
+}
+
+// Функция для переключения стиля при наведении и отведении мыши
+    function toggleCellStyle(cell) {
+      if (cell.classList.contains("table-cell")) {
+        cell.className = "table-cell-alternate";
+      } else {
+        cell.className = "table-cell";
+      }
+  }
+
+
+</script>
+</head>
+
+<body>
+&nbsp;<div class="text">
+    <main>
+     <h1>Создание электронной почты</h1>
+         <font onmouseover="this.style.color='red';this.style.fontFamily='Verdana'" onmouseout="this.style.color='black'; this.style.fontFamily='Times New Roman'; this.style.fontSize='13pt'"><p>Символ @ в разных странах имеет различные имена, и каждое из них интересно по-своему. Какой историей обладает этот знак и как он стал ключевым символом электронной почты? </font> <br> </p>
+ 
+	        <p id="second" onmouseover="changeStyle()" onmouseout="restoreStyle()">Долгие исследования ученых показали, что этот символ использовался задолго до появления электронной почты и даже компьютеров. Его путь начался более тысячи лет назад, и его значение было разнообразным <br> </p>
+
+	<p>Символ @ пользовался популярностью в записях финансовых и торговых операций на протяжении многих столетий. Его даже поместили на клавиатуру пишущих машинок, которые использовали бизнесмены и банкиры. <br> </p>
+
+	<p>С приходом ранних компьютеров, которые использовали клавиатуры пишущих машинок в качестве терминалов, символ @ удачно прижился в компьютерном мире. Впоследствии он стал главным символом современной электронной почты, с которой мы знакомы сегодня. <br> </p>
+
+	<p>Краткая история возникновения электронной почты связана с несколькими ключевыми моментами и вкладом различных ученых и инженеров. Вот хронология появления и развития:
+</p>
+  
+        </details>&nbsp;<h2>Хронология создания электронной почты</h2>
+          <p class="news"><span class="date">1960-е - </span>Первые шаги в разработке электронной почты были сделаны в различных исследовательских центрах, университетах и организациях. В это время создавались прототипы систем электронной переписки для передачи сообщений между пользователей на компьютерах в рамках локальных сетей.</p>
+          <p class="news"><span class="date">1970-е - </span>В 1971 году инженер Рэй Томлинсон разработал первую сетевую систему электронной почты и создал символ «@» для разделения имени пользователя и адреса его почтового ящика. Он также стал использовать протокол ARPANET для передачи электронных сообщений между компьютерами.
+</p>
+          <p class="news"><span class="date">1980-е - </span>В 1982 году был разработан стандартный протокол электронной почты SMTP (Simple Mail Transfer Protocol), который стал основой для международного обмена электронными сообщениями. В это время появились первые коммерческие почтовые службы, предоставляющие возможность отправлять и получать электронные письма.</p>
+          <p class="news"><span class="date">1990-е - </span>С развитием интернета и веб-технологий появилась веб-почта, позволяющая пользователю получать доступ к своей почте через веб-браузер. Это значительно упростило процесс обмена сообщениями и сделало электронную почту более доступной для широкой аудитории.</p>
+          <p class="news"><span class="date">2000-е и далее - </span>Веб-почта продолжала развиваться, интегрируясь с другими онлайн-сервисами, такими как облачные хранилища, календари и контактные списки. С появлением мобильных технологий электронная почта стала доступной на смартфонах и планшетах, что позволило пользователям быть на связи в любое время.</p>
+          
+	<table>
+        <tr>
+          <td class="table-cell" onmouseover="toggleCellStyle(this)" onmouseout="toggleCellStyle(this)">Ячейка 11</td>
+          <td class="table-cell" onmouseover="toggleCellStyle(this)" onmouseout="toggleCellStyle(this)">Ячейка 12</td>
+          <td class="table-cell-alternate" onmouseover="toggleCellStyle(this)" onmouseout="toggleCellStyle(this)">Ячейка 13</td>
+        </tr>
+        <tr>
+          <td class="table-cell" onmouseover="toggleCellStyle(this)" onmouseout="toggleCellStyle(this)">Ячейка 21</td>
+          <td class="table-cell-alternate" onmouseover="toggleCellStyle(this)" onmouseout="toggleCellStyle(this)">Ячейка 22</td>
+          <td class="table-cell-alternate" onmouseover="toggleCellStyle(this)" onmouseout="toggleCellStyle(this)">Ячейка 23</td>
+        </tr>
+      </table>
+     
+<button class = "buttonstyle" onclick="hideMiddleImage()">Hide Middle Image</button>
+<button class = "buttonstyle" onclick="showMiddleImage()">Show Middle Image</button>
+<button class = "buttonstyle" onclick="swapLayers()">Swap Layers</button>
+
+<img src="image1.jpg" class="image" style="z-index: 3;"img.style.paddingLeft="1.5cm"; name="image1" >
+<img src="image2.jpg" class="image" style="z-index: 2;"img.style.paddingLeft="1.5cm"; name="image2">
+<img src="image3.jpg" class="image" style="z-index: 1;"img.style.paddingLeft="1.5cm"; name="image3">
+
+</main>
+</div> 
+</body>
+</html>
